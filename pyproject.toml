@@ -36,11 +36,11 @@ keywords = []
 dependencies = []
 
 [project.urls]
-Homepage = "https://github.com/Oscarcheng0312/pyospackage_oscar"
-"Source Code" = "https://github.com/Oscarcheng0312/pyospackage_oscar"
-"Bug Tracker" = "https://github.com/Oscarcheng0312/pyospackage_oscar/issues"
-Documentation = "https://github.com/Oscarcheng0312/pyospackage_oscar/blob/main/README.md"
-Download = "https://pypi.org/project/pyospackage_oscar/#files"
+Homepage = "https://github.com/Oscarcheng0312/pyospackage_oscar_cheng"
+"Source Code" = "https://github.com/Oscarcheng0312/pyospackage_oscar_cheng"
+"Bug Tracker" = "https://github.com/Oscarcheng0312/pyospackage_oscar_cheng/issues"
+Documentation = "https://github.com/Oscarcheng0312/pyospackage_oscar_cheng/blob/main/README.md"
+Download = "https://pypi.org/project/pyospackage_oscar_cheng/#files"
 
 [project.optional-dependencies]
 # The groups below should be in the [development-groups] table
@@ -88,7 +88,7 @@ only-packages = true
 # This tells Hatch to build the package from the src/ directory.
 # Read more about src layouts here: https://www.pyopensci.org/python-package-guide/package-structure-code/python-package-structure.html
 [tool.hatch.build.targets.wheel]
-packages = ["src/pyospackage_oscar"]
+packages = ["src/pyospackage_oscar_cheng"]
 
 
 
@@ -99,8 +99,8 @@ markers = ["raises"] # Tells pytest to not raise a warning if you use @pytest.ma
 
 [tool.coverage.paths]
 source = [
-    "src/pyospackage_oscar",
-    "*/site-packages/pyospackage_oscar",
+    "src/pyospackage_oscar_cheng",
+    "*/site-packages/pyospackage_oscar_cheng",
 ]
 
 [tool.coverage.run]
@@ -150,7 +150,7 @@ features = [
 python = ["3.10", "3.11", "3.12", "3.13"]
 
 [tool.hatch.envs.test.scripts]
-run = "pytest {args:--cov=pyospackage_oscar --cov-report=term-missing --cov-report=xml}"
+run = "pytest {args:--cov=pyospackage_oscar_cheng --cov-report=term-missing --cov-report=xml}"
 
 #--------------- Build and preview your documentation ---------------#
 
@@ -167,7 +167,7 @@ features = [
 # hatch run docs:serve will serve them 'live' on your computer locally
 [tool.hatch.envs.docs.scripts]
 build = ["sphinx-build {args:-W -b html docs docs/_build}"]
-serve = ["sphinx-autobuild docs --watch src/pyospackage_oscar {args:-b html docs/_build/serve}"]
+serve = ["sphinx-autobuild docs --watch src/pyospackage_oscar_cheng {args:-b html docs/_build/serve}"]
 
 
 
